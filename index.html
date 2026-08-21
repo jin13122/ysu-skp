@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영산대학교 x SK플래닛 관광 MICE AI 빅데이터 과정</title>
-    <!-- Tailwind CSS (스타일링 툴) -->
+    
+    <!-- 1. Tailwind CSS (디자인 자동 적용) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons (아이콘 라이브러리) -->
+    
+    <!-- 2. Lucide Icons (아이콘 라이브러리) -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Pretendard (한국어에 가장 깔끔한 웹 폰트) -->
+    
+    <!-- 3. Pretendard (한국어에 가장 깔끔한 무료 폰트) -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    
     <style>
         body { font-family: 'Pretendard', sans-serif; }
         .break-keep { word-break: keep-all; }
         
-        /* 스크롤 시 위로 부드럽게 올라오는 애니메이션 CSS */
+        /* 스크롤 시 부드럽게 나타나는 애니메이션 */
         .reveal {
             opacity: 0;
             transform: translateY(40px);
@@ -26,47 +30,52 @@
         }
     </style>
 </head>
-<body class="min-h-screen bg-white text-slate-900 selection:bg-indigo-100 selection:text-indigo-900">
+<body class="min-h-screen bg-gradient-to-br from-red-50 via-orange-50 to-orange-100 text-slate-900 selection:bg-red-100 selection:text-red-900 relative">
     
     <!-- 1. 메인 히어로 섹션 -->
-    <section class="relative bg-slate-900 text-white py-32 px-6 overflow-hidden">
+    <section class="relative bg-red-900 text-white pb-32 pt-6 px-6 overflow-hidden min-h-[500px] flex flex-col">
         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80')] opacity-20 bg-cover bg-center"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-slate-900 to-slate-900/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-red-900 to-orange-900/90"></div>
         
-        <div class="relative max-w-5xl mx-auto flex flex-col items-start">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-sm font-bold mb-6">
+
+            </a>
+        </div>
+
+        <!-- 가운데 정렬 텍스트 영역 -->
+        <div class="relative z-10 max-w-5xl mx-auto flex flex-col items-center text-center flex-1 justify-center">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/20 text-red-300 border border-red-500/30 text-sm font-bold mb-6">
                 <i data-lucide="book-open" class="w-4 h-4"></i>
                 영산대학교 x SK플래닛
             </div>
             <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6 leading-tight break-keep">
                 관광 MICE AI 빅데이터 과정
             </h1>
-            <p class="text-lg md:text-xl text-slate-300 max-w-2xl leading-relaxed mb-10 break-keep">
-                도메인 지식을 기반으로 데이터 기반 고객 분석과 문제 정의를 통해 비즈니스 문제를 해결하는 데이터 분석가로 성장하세요.
+            <p class="text-lg md:text-xl text-red-100/90 max-w-2xl leading-relaxed mb-10 break-keep">
+                도메인 지식을 기반으로 데이터 기반 고객 분석과 문제 정의를 통해<br/>비즈니스 문제를 해결하는 데이터 분석가로 성장하세요.
             </p>
         </div>
     </section>
 
     <!-- 2. 모집 요강 섹션 -->
-    <section class="reveal py-24 px-6 bg-slate-50 border-b border-slate-100">
+    <section class="reveal py-24 px-6 bg-transparent">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">모집 요강</h2>
-                <div class="w-12 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+                <div class="w-12 h-1 bg-gradient-to-r from-red-600 to-orange-500 mx-auto rounded-full"></div>
             </div>
             
-            <div class="bg-white rounded-3xl shadow-sm border border-slate-200/60 p-8 md:p-12">
+            <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-sm border border-white/60 p-8 md:p-12">
                 <ul class="space-y-6">
-                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-100 last:border-0 pb-6 last:pb-0">
-                        <div class="flex items-center gap-3 w-40 shrink-0 text-slate-500 font-medium">
-                            <i data-lucide="users" class="w-5 h-5 text-indigo-500"></i>
+                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-200/60 last:border-0 pb-6 last:pb-0">
+                        <div class="flex items-center gap-3 w-44 shrink-0 text-slate-500 font-medium">
+                            <i data-lucide="users" class="w-5 h-5 text-red-500"></i>
                             모집인원
                         </div>
                         <div class="text-lg font-bold text-slate-900">25명</div>
                     </li>
-                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-100 last:border-0 pb-6 last:pb-0">
-                        <div class="flex items-center gap-3 w-40 shrink-0 text-slate-500 font-medium">
-                            <i data-lucide="calendar" class="w-5 h-5 text-indigo-500"></i>
+                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-200/60 last:border-0 pb-6 last:pb-0">
+                        <div class="flex items-center gap-3 w-44 shrink-0 text-slate-500 font-medium">
+                            <i data-lucide="calendar" class="w-5 h-5 text-red-500"></i>
                             훈련기간
                         </div>
                         <div class="text-lg font-bold text-slate-900 flex items-center flex-wrap gap-2">
@@ -74,30 +83,37 @@
                             <span class="inline-flex animate-pulse items-center rounded-full bg-red-100 px-2.5 py-0.5 text-sm font-bold text-red-600 border border-red-200">추가모집중</span>
                         </div>
                     </li>
-                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-100 last:border-0 pb-6 last:pb-0">
-                        <div class="flex items-center gap-3 w-40 shrink-0 text-slate-500 font-medium">
-                            <i data-lucide="clock" class="w-5 h-5 text-indigo-500"></i>
+                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-200/60 last:border-0 pb-6 last:pb-0">
+                        <div class="flex items-center gap-3 w-44 shrink-0 text-slate-500 font-medium">
+                            <i data-lucide="clock" class="w-5 h-5 text-red-500"></i>
                             훈련시간
                         </div>
                         <div class="text-lg font-bold text-slate-900">703시간</div>
                     </li>
-                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-100 last:border-0 pb-6 last:pb-0">
-                        <div class="flex items-center gap-3 w-40 shrink-0 text-slate-500 font-medium">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-indigo-500"></i>
+                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-200/60 last:border-0 pb-6 last:pb-0">
+                        <div class="flex items-center gap-3 w-44 shrink-0 text-slate-500 font-medium">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i>
                             훈련장소
                         </div>
                         <div class="text-lg font-bold text-slate-900">BIFC2 교육장(부산 남구 문현동)</div>
                     </li>
-                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-100 last:border-0 pb-6 last:pb-0">
-                        <div class="flex items-center gap-3 w-40 shrink-0 text-slate-500 font-medium">
-                            <i data-lucide="wallet" class="w-5 h-5 text-indigo-500"></i>
+                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-200/60 last:border-0 pb-6 last:pb-0">
+                        <div class="flex items-center gap-3 w-44 shrink-0 text-slate-500 font-medium">
+                            <i data-lucide="wallet" class="w-5 h-5 text-red-500"></i>
                             비용
                         </div>
                         <div class="text-lg font-bold text-slate-900">전액무료</div>
                     </li>
+                    <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 border-b border-slate-200/60 last:border-0 pb-6 last:pb-0">
+                        <div class="flex items-center gap-3 w-44 shrink-0 text-slate-500 font-medium">
+                            <i data-lucide="credit-card" class="w-5 h-5 text-red-500"></i>
+                            국민내일배움카드
+                        </div>
+                        <div class="text-lg font-bold text-slate-900">필요없음</div>
+                    </li>
                 </ul>
-                <div class="mt-8 pt-6 border-t border-slate-100 text-sm text-slate-500 flex items-start gap-2">
-                    <span class="text-indigo-500 font-bold">*</span>
+                <div class="mt-8 pt-6 border-t border-slate-200/60 text-sm text-slate-500 flex items-start gap-2">
+                    <span class="text-red-500 font-bold">*</span>
                     내일배움카드 사용하신분도 신청가능
                 </div>
             </div>
@@ -105,15 +121,15 @@
     </section>
 
     <!-- 3. 훈련목적 섹션 -->
-    <section class="reveal py-24 px-6 bg-white">
+    <section class="reveal py-24 px-6 bg-transparent">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">훈련목적</h2>
-                <div class="w-12 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+                <div class="w-12 h-1 bg-gradient-to-r from-red-600 to-orange-500 mx-auto rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-2 gap-8 md:gap-12">
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center">
-                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <div class="p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-white/60 shadow-sm flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="target" class="w-8 h-8"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-4">비즈니스 문제 해결 인재</h3>
@@ -121,8 +137,8 @@
                         도메인 지식을 기반으로 데이터 기반 고객 분석, 문제정의를 통한 비즈니스 문제 해결능력을 가진 인재 양성
                     </p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col items-center text-center">
-                    <div class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <div class="p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-white/60 shadow-sm flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="trending-up" class="w-8 h-8"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-4">데이터 분석가 성장</h3>
@@ -135,41 +151,41 @@
     </section>
 
     <!-- 4. 훈련특징 섹션 -->
-    <section class="reveal py-24 px-6 bg-slate-900 text-white">
+    <section class="reveal py-24 px-6 bg-gradient-to-r from-red-950 to-orange-950 text-white">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 tracking-tight">훈련특징</h2>
-                <div class="w-12 h-1 bg-indigo-500 mx-auto rounded-full"></div>
+                <div class="w-12 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-3xl bg-slate-800 border border-slate-700">
-                    <i data-lucide="monitor-play" class="w-12 h-12 text-indigo-400 mb-6"></i>
+                <div class="p-8 rounded-3xl bg-white/10 border border-white/10">
+                    <i data-lucide="monitor-play" class="w-12 h-12 text-red-400 mb-6"></i>
                     <h3 class="text-lg font-bold mb-4 flex items-center gap-3 text-slate-100">
-                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-indigo-500/20 text-indigo-300 text-sm font-bold">1</span>
+                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-red-500/20 text-red-300 text-sm font-bold">1</span>
                         전문 커리큘럼
                     </h3>
-                    <p class="text-slate-400 leading-relaxed break-keep">
+                    <p class="text-red-100/60 leading-relaxed break-keep">
                         최신 AI 활용 능력과 탄탄한 데이터 분석 기본기를 갖출 수 있는 100% 오프라인 교육 전문 커리큘럼<br/>
-                        <span class="text-sm text-slate-500 mt-2 block">(실무 멘토링 일부 온라인 시행)</span>
+                        <span class="text-sm text-red-100/40 mt-2 block">(실무 멘토링 일부 온라인 시행)</span>
                     </p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-800 border border-slate-700">
-                    <i data-lucide="users" class="w-12 h-12 text-indigo-400 mb-6"></i>
+                <div class="p-8 rounded-3xl bg-white/10 border border-white/10">
+                    <i data-lucide="users" class="w-12 h-12 text-red-400 mb-6"></i>
                     <h3 class="text-lg font-bold mb-4 flex items-center gap-3 text-slate-100">
-                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-indigo-500/20 text-indigo-300 text-sm font-bold">2</span>
+                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-red-500/20 text-red-300 text-sm font-bold">2</span>
                         실무 프로젝트
                     </h3>
-                    <p class="text-slate-400 leading-relaxed break-keep">
+                    <p class="text-red-100/60 leading-relaxed break-keep">
                         이론을 넘어선 실습 중심 교육과 실무 프로젝트를 통한 실전 비즈니스 문제 해결 능력 함양
                     </p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-800 border border-slate-700">
-                    <i data-lucide="presentation" class="w-12 h-12 text-indigo-400 mb-6"></i>
+                <div class="p-8 rounded-3xl bg-white/10 border border-white/10">
+                    <i data-lucide="presentation" class="w-12 h-12 text-red-400 mb-6"></i>
                     <h3 class="text-lg font-bold mb-4 flex items-center gap-3 text-slate-100">
-                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-indigo-500/20 text-indigo-300 text-sm font-bold">3</span>
+                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-red-500/20 text-red-300 text-sm font-bold">3</span>
                         협업 및 소통
                     </h3>
-                    <p class="text-slate-400 leading-relaxed break-keep">
+                    <p class="text-red-100/60 leading-relaxed break-keep">
                         인사이트 도출 및 발표, 동료간 협업 및 소통, 스터디 소모임 등을 통한 능동적인 자기개발 역량 함양
                     </p>
                 </div>
@@ -178,80 +194,108 @@
     </section>
 
     <!-- 5. 훈련구성 커리큘럼 섹션 -->
-    <section class="reveal py-24 px-6 bg-slate-50">
+    <section class="reveal py-24 px-6 bg-transparent">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">훈련구성</h2>
-                <div class="w-12 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+                <div class="w-12 h-1 bg-gradient-to-r from-red-600 to-orange-500 mx-auto rounded-full"></div>
             </div>
             
             <div class="space-y-6">
-                <div class="rounded-3xl p-6 md:p-8 border border-slate-200/60 shadow-sm flex flex-col md:flex-row gap-6 items-start md:items-center bg-white">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-blue-500 shadow-sm">
+                <div class="rounded-3xl p-6 md:p-8 border border-white/60 shadow-sm flex flex-col md:flex-row gap-6 items-start md:items-center bg-white/80 backdrop-blur-md">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-red-500 shadow-sm">
                         <i data-lucide="database" class="w-8 h-8"></i>
                     </div>
-                    <div class="flex-1">
+                    <div class="flex-1 w-full">
                         <h3 class="text-xl font-bold text-slate-900 mb-4 md:mb-3">데이터분석 기초</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">파이썬</span>
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">SQL</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">파이썬</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">SQL</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="rounded-3xl p-6 md:p-8 border border-slate-200/60 shadow-sm flex flex-col md:flex-row gap-6 items-start md:items-center bg-white">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-emerald-500 shadow-sm">
+                <div class="rounded-3xl p-6 md:p-8 border border-white/60 shadow-sm flex flex-col md:flex-row gap-6 items-start md:items-center bg-white/80 backdrop-blur-md">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-orange-500 shadow-sm">
                         <i data-lucide="line-chart" class="w-8 h-8"></i>
                     </div>
-                    <div class="flex-1">
+                    <div class="flex-1 w-full">
                         <h3 class="text-xl font-bold text-slate-900 mb-4 md:mb-3">데이터 수집 / EDA / 태블로</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">원데이터 수집</span>
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">EDA</span>
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">태블로 시각화</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">원데이터 수집</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">EDA</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">태블로 시각화</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="rounded-3xl p-6 md:p-8 border border-slate-200/60 shadow-sm flex flex-col md:flex-row gap-6 items-start md:items-center bg-white">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-purple-500 shadow-sm">
+                <div class="rounded-3xl p-6 md:p-8 border border-white/60 shadow-sm flex flex-col md:flex-row gap-6 items-start md:items-center bg-white/80 backdrop-blur-md">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-amber-500 shadow-sm">
                         <i data-lucide="cpu" class="w-8 h-8"></i>
                     </div>
-                    <div class="flex-1">
+                    <div class="flex-1 w-full">
                         <h3 class="text-xl font-bold text-slate-900 mb-4 md:mb-3">생성형AI / 딥러닝</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">생성형AI/LLM</span>
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">프롬프트엔지니어링</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">생성형AI/LLM</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">프롬프트엔지니어링</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="rounded-3xl p-6 md:p-8 border border-slate-200/60 shadow-sm flex flex-col md:flex-row gap-6 items-start md:items-center bg-white">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-orange-500 shadow-sm">
+                <div class="rounded-3xl p-6 md:p-8 border border-white/60 shadow-sm flex flex-col md:flex-row gap-6 items-start md:items-center bg-white/80 backdrop-blur-md">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-rose-500 shadow-sm">
                         <i data-lucide="brain" class="w-8 h-8"></i>
                     </div>
-                    <div class="flex-1">
+                    <div class="flex-1 w-full">
                         <h3 class="text-xl font-bold text-slate-900 mb-4 md:mb-3">머신러닝</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">모델링을 위한 수학</span>
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">머신러닝 기초</span>
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">머신러닝 모델 개발실습</span>
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">클라우드 기반 분석환경 구축</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">모델링을 위한 수학</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">머신러닝 기초</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">머신러닝 모델 개발실습</span>
+                            <span class="bg-white text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50 shadow-sm">클라우드 기반 분석환경 구축</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="rounded-3xl p-6 md:p-8 border border-slate-200/60 shadow-sm flex flex-col md:flex-row gap-6 items-start md:items-center bg-white">
-                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-indigo-500 shadow-sm">
+                <!-- 5. 프로젝트 상세 항목 (리스트 하단) -->
+                <div class="rounded-3xl p-6 md:p-8 border border-white/60 shadow-sm flex flex-col md:flex-row gap-6 items-start bg-white/80 backdrop-blur-md">
+                    <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 bg-red-600 shadow-sm">
                         <i data-lucide="briefcase" class="w-8 h-8"></i>
                     </div>
-                    <div class="flex-1">
+                    <div class="flex-1 w-full">
                         <h3 class="text-xl font-bold text-slate-900 mb-4 md:mb-3">프로젝트</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">머신러닝 프로젝트</span>
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">생성형AI 활용 프로젝트</span>
-                            <span class="bg-slate-100 text-slate-700 px-4 py-1.5 rounded-xl text-sm font-medium border border-slate-200/50">기업매칭 프로젝트</span>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4 mt-2">
+                            <div class="bg-white/90 border border-red-100 p-4 rounded-2xl shadow-sm">
+                                <h4 class="font-bold text-red-600 mb-1">시각화·BI 프로젝트</h4>
+                                <p class="text-sm text-slate-600 mb-3 break-keep">관광·MICE 데이터 시각화와 비즈니스 인사이트 도출</p>
+                                <div class="inline-block bg-red-50 border border-red-100 text-red-700 text-xs px-2.5 py-1 rounded-lg font-bold">
+                                    결과물: 태블로 대시보드, 인사이트 리포트
+                                </div>
+                            </div>
+                            <div class="bg-white/90 border border-red-100 p-4 rounded-2xl shadow-sm">
+                                <h4 class="font-bold text-red-600 mb-1">머신러닝 프로젝트</h4>
+                                <p class="text-sm text-slate-600 mb-3 break-keep">전처리·모델링·성능평가를 거쳐 예측 모델 구현</p>
+                                <div class="inline-block bg-red-50 border border-red-100 text-red-700 text-xs px-2.5 py-1 rounded-lg font-bold">
+                                    결과물: 분석 노트북, 모델 결과 보고서
+                                </div>
+                            </div>
+                            <div class="bg-white/90 border border-red-100 p-4 rounded-2xl shadow-sm">
+                                <h4 class="font-bold text-red-600 mb-1">생성형AI 활용 프로젝트</h4>
+                                <p class="text-sm text-slate-600 mb-3 break-keep">딥러닝·LLM·RAG를 활용한 관광 서비스 프로토타입 개발</p>
+                                <div class="inline-block bg-red-50 border border-red-100 text-red-700 text-xs px-2.5 py-1 rounded-lg font-bold">
+                                    결과물: AI 서비스 MVP, 데모 시나리오
+                                </div>
+                            </div>
+                            <div class="bg-white/90 border border-red-100 p-4 rounded-2xl shadow-sm">
+                                <h4 class="font-bold text-red-600 mb-1">기업Match 실전 프로젝트</h4>
+                                <p class="text-sm text-slate-600 mb-3 break-keep">부산 관광/MICE 산업 과제 수행</p>
+                                <div class="inline-block bg-red-50 border border-red-100 text-red-700 text-xs px-2.5 py-1 rounded-lg font-bold">
+                                    결과물: 최종 서비스/분석물, 발표자료·포트폴리오
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -259,50 +303,50 @@
     </section>
 
     <!-- 6. 혜택 섹션 -->
-    <section class="reveal py-24 px-6 bg-white">
+    <section class="reveal py-24 px-6 bg-transparent">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">우리 과정만의 혜택</h2>
-                <div class="w-12 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+                <div class="w-12 h-1 bg-gradient-to-r from-red-600 to-orange-500 mx-auto rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col">
-                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <div class="p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-white/60 flex flex-col shadow-sm">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="users" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3 break-keep">100% 오프라인 교육</h3>
                     <p class="text-slate-600 leading-relaxed break-keep">1:1 맞춤형 피드백</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col">
-                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <div class="p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-white/60 flex flex-col shadow-sm">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="lightbulb" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3 break-keep">소모임 활동 / 논문 작성</h3>
                     <p class="text-slate-600 leading-relaxed break-keep">적극적인 자기개발 지원</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col">
-                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <div class="p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-white/60 flex flex-col shadow-sm">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="award" class="w-7 h-7"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3 break-keep">실무 경험 강사 및 테크기업 현업 전문가</h3>
-                    <p class="text-slate-600 leading-relaxed break-keep">전문가 참여(특강)</p>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 break-keep">실무 경험 강사 및 현업 전문가</h3>
+                    <p class="text-slate-600 leading-relaxed break-keep">테크기업 현업 전문가 특강</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col">
-                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <div class="p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-white/60 flex flex-col shadow-sm">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="gift" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3 break-keep">새출발 지원금 100만원</h3>
                     <p class="text-slate-600 leading-relaxed break-keep">OK캐시백 포인트 지급</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col">
-                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <div class="p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-white/60 flex flex-col shadow-sm">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="briefcase" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3 break-keep">1:1 맞춤형 취업컨설팅</h3>
                     <p class="text-slate-600 leading-relaxed break-keep">자기소개서/포트폴리오 첨삭, 취업연계지원</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col">
-                    <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <div class="p-8 rounded-3xl bg-white/80 backdrop-blur-md border border-white/60 flex flex-col shadow-sm">
+                    <div class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6">
                         <i data-lucide="laptop" class="w-7 h-7"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3 break-keep">SW이용료 무료</h3>
@@ -313,40 +357,40 @@
     </section>
 
     <!-- 7. 지원자격 섹션 -->
-    <section class="reveal py-24 px-6 bg-slate-900 text-white">
+    <section class="reveal py-24 px-6 bg-gradient-to-br from-red-900 to-orange-900 text-white">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 tracking-tight">지원자격</h2>
-                <div class="w-12 h-1 bg-indigo-500 mx-auto rounded-full"></div>
+                <div class="w-12 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-3xl bg-slate-800 border border-slate-700">
-                    <i data-lucide="map-pin" class="w-10 h-10 text-indigo-400 mb-6"></i>
+                <div class="p-8 rounded-3xl bg-white/10 border border-white/10">
+                    <i data-lucide="map-pin" class="w-10 h-10 text-red-400 mb-6"></i>
                     <h3 class="text-lg font-bold mb-4 flex items-center gap-3 text-slate-100">
-                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-indigo-500/20 text-indigo-300 text-sm font-bold">1</span>
+                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-red-500/20 text-red-300 text-sm font-bold">1</span>
                         오프라인 수업 참여가능자(부산)
                     </h3>
-                    <p class="text-slate-400 leading-relaxed break-keep">
+                    <p class="text-red-100/60 leading-relaxed break-keep">
                         AI·데이터 분야에 관심 높은 지역 인재
                     </p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-800 border border-slate-700">
-                    <i data-lucide="target" class="w-10 h-10 text-indigo-400 mb-6"></i>
+                <div class="p-8 rounded-3xl bg-white/10 border border-white/10">
+                    <i data-lucide="target" class="w-10 h-10 text-red-400 mb-6"></i>
                     <h3 class="text-lg font-bold mb-4 flex items-center gap-3 text-slate-100">
-                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-indigo-500/20 text-indigo-300 text-sm font-bold">2</span>
+                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-red-500/20 text-red-300 text-sm font-bold">2</span>
                         MICE 분야 경험자 우대
                     </h3>
-                    <p class="text-slate-400 leading-relaxed break-keep">
+                    <p class="text-red-100/60 leading-relaxed break-keep">
                         데이터 분석 관련 업무 경험자 우대
                     </p>
                 </div>
-                <div class="p-8 rounded-3xl bg-slate-800 border border-slate-700">
-                    <i data-lucide="user-check" class="w-10 h-10 text-indigo-400 mb-6"></i>
+                <div class="p-8 rounded-3xl bg-white/10 border border-white/10">
+                    <i data-lucide="user-check" class="w-10 h-10 text-red-400 mb-6"></i>
                     <h3 class="text-lg font-bold mb-4 flex items-center gap-3 text-slate-100">
-                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-indigo-500/20 text-indigo-300 text-sm font-bold">3</span>
+                        <span class="flex items-center justify-center w-7 h-7 rounded-full bg-red-500/20 text-red-300 text-sm font-bold">3</span>
                         비전공자 참여 가능
                     </h3>
-                    <p class="text-slate-400 leading-relaxed break-keep">
+                    <p class="text-red-100/60 leading-relaxed break-keep">
                         전공과 무관하게 데이터 분석에 관심이 있다면 누구나 참여 가능
                     </p>
                 </div>
@@ -354,26 +398,27 @@
         </div>
     </section>
 
-    <!-- 8. 문의받기 (InputHaven 연동 낙관적 UI 적용 폼) -->
+    <!-- 8. 과정지원하기 폼 (InputHaven 연동) -->
     <section class="reveal py-24 px-6 bg-white border-t border-slate-100" id="inquiry">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">문의하기</h2>
-                <div class="w-12 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 tracking-tight">과정지원하기</h2>
+                <div class="w-12 h-1 bg-gradient-to-r from-red-600 to-orange-500 mx-auto rounded-full"></div>
             </div>
 
-            <!-- 성공 메시지 (처음엔 숨김 처리) -->
-            <div id="successMessage" class="hidden bg-indigo-50 rounded-3xl p-12 text-center border border-indigo-100">
-                <i data-lucide="check-circle-2" class="w-16 h-16 text-indigo-500 mx-auto mb-6"></i>
-                <h3 class="text-2xl font-bold text-slate-900 mb-4">상담 신청이 완료되었습니다!</h3>
+            <!-- 폼 제출 완료 후 보여질 화면 -->
+            <div id="successMessage" class="hidden bg-red-50 rounded-3xl p-12 text-center border border-red-100 shadow-sm">
+                <i data-lucide="check-circle-2" class="w-16 h-16 text-red-500 mx-auto mb-6"></i>
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">지원 신청이 완료되었습니다!</h3>
                 <p class="text-slate-600 leading-relaxed break-keep">
                     담당자가 확인 후 빠르게 연락드리겠습니다.<br>관심 가져주셔서 감사합니다.
                 </p>
             </div>
 
-            <!-- 폼 컨테이너 -->
+            <!-- 입력 폼 -->
             <div id="formContainer" class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-12">
                 <form id="inquiryForm" class="space-y-6">
+                    <!-- Form ID (이전에 세팅된 InputHaven의 고유 ID 유지) -->
                     <input type="hidden" name="_form_id" value="5b31b9ae19d70b7366da3f4ff6220a04" />
                     
                     <div>
@@ -384,50 +429,50 @@
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-bold text-slate-700 mb-2">이름 <span class="text-red-500">*</span></label>
-                            <input type="text" name="name" placeholder="홍길동" required class="w-full bg-white border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 rounded-xl px-4 py-3 outline-none transition-all" />
+                            <input type="text" name="name" placeholder="홍길동" required class="w-full bg-white border border-slate-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 rounded-xl px-4 py-3 outline-none transition-all" />
                         </div>
                         <div>
                             <label class="block text-sm font-bold text-slate-700 mb-2">나이 <span class="text-red-500">*</span></label>
-                            <input type="text" name="age" placeholder="예: 30" required class="w-full bg-white border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 rounded-xl px-4 py-3 outline-none transition-all" />
+                            <input type="text" name="age" placeholder="예: 30" required class="w-full bg-white border border-slate-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 rounded-xl px-4 py-3 outline-none transition-all" />
                         </div>
                     </div>
 
                     <div>
                         <label class="block text-sm font-bold text-slate-700 mb-2">연락처 <span class="text-red-500">*</span></label>
-                        <input type="tel" name="phone" placeholder="010-0000-0000" required class="w-full bg-white border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 rounded-xl px-4 py-3 outline-none transition-all" />
+                        <input type="tel" name="phone" placeholder="010-0000-0000" required class="w-full bg-white border border-slate-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 rounded-xl px-4 py-3 outline-none transition-all" />
                     </div>
 
                     <div>
-                        <label class="block text-sm font-bold text-slate-700 mb-2">문의내용</label>
-                        <textarea name="message" rows="4" placeholder="궁금하신 점을 자유롭게 적어주세요." class="w-full bg-white border border-slate-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 rounded-xl px-4 py-3 outline-none transition-all resize-none"></textarea>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">문의/남기실 말씀</label>
+                        <textarea name="message" rows="4" placeholder="궁금하신 점이나 남기실 말씀을 자유롭게 적어주세요." class="w-full bg-white border border-slate-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 rounded-xl px-4 py-3 outline-none transition-all resize-none"></textarea>
                     </div>
 
                     <div class="flex items-center justify-between p-4 bg-slate-50 rounded-xl border border-slate-200">
                         <label class="flex items-center gap-3 cursor-pointer">
-                            <input type="checkbox" name="privacy_agreed" checked onclick="return false;" class="w-5 h-5 text-indigo-600 rounded border-slate-300 focus:ring-indigo-500 cursor-not-allowed" />
+                            <input type="checkbox" name="privacy_agreed" checked onclick="return false;" class="w-5 h-5 text-red-600 rounded border-slate-300 focus:ring-red-500 cursor-not-allowed" />
                             <span class="text-sm font-medium text-slate-700">개인정보 수집 및 이용에 동의합니다.</span>
                         </label>
-                        <button type="button" id="openPrivacyBtn" class="text-sm text-indigo-600 font-bold hover:underline">
+                        <button type="button" id="openPrivacyBtn" class="text-sm text-red-600 font-bold hover:underline">
                             자세히 보기
                         </button>
                     </div>
 
-                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-lg py-4 rounded-xl transition-colors shadow-lg shadow-indigo-600/20">
-                        문의 신청하기
+                    <button type="submit" class="w-full bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-700 hover:to-orange-600 text-white font-bold text-lg py-4 rounded-xl transition-all shadow-lg shadow-red-600/20">
+                        과정신청하기
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- 개인정보 동의 모달창 -->
+    <!-- 개인정보 동의 상세 팝업창 -->
     <div id="privacyModal" class="hidden fixed inset-0 z-50 items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm">
         <div class="bg-white rounded-3xl w-full max-w-md p-8 relative shadow-2xl">
             <button type="button" class="close-privacy absolute top-6 right-6 text-slate-400 hover:text-slate-600">
                 <i data-lucide="x" class="w-6 h-6"></i>
             </button>
             <h3 class="text-xl font-bold text-slate-900 mb-2 break-keep">개인정보 수집 및 이용 동의</h3>
-            <p class="text-sm text-red-500 mb-6 font-medium break-keep">동의하지 않을 경우, 설문 참여가 제한될 수 있습니다.</p>
+            <p class="text-sm text-red-500 mb-6 font-medium break-keep">동의하지 않을 경우, 신청이 제한될 수 있습니다.</p>
             
             <ul class="space-y-4 text-sm text-slate-600 mb-8 break-keep">
                 <li class="flex gap-4">
@@ -436,11 +481,11 @@
                 </li>
                 <li class="flex gap-4">
                     <span class="font-bold text-slate-700 shrink-0 w-24">수집 목적</span>
-                    <span>과정안내</span>
+                    <span>과정 안내 및 선발</span>
                 </li>
                 <li class="flex gap-4">
                     <span class="font-bold text-slate-700 shrink-0 w-24">보유 기간</span>
-                    <span class="font-bold text-indigo-600">6개월</span>
+                    <span class="font-bold text-red-600">6개월</span>
                 </li>
             </ul>
 
@@ -451,20 +496,38 @@
     </div>
 
     <!-- 9. 푸터 -->
-    <footer class="bg-slate-900 border-t border-slate-800 py-12 px-6 text-center text-slate-400">
-        <div class="max-w-5xl mx-auto">
-            <p class="font-bold text-lg mb-2 text-slate-300">영산대학교 x SK플래닛</p>
-            <p class="text-sm">관광 MICE AI 빅데이터 과정</p>
-            <p class="text-sm mt-8 text-slate-600">© 2024 Youngsan University & SK Planet. All rights reserved.</p>
+    <footer class="bg-red-950 border-t border-red-900/50 py-12 px-6 text-red-200/60">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between gap-8 md:items-end">
+            <!-- 왼쪽 정렬 그룹 -->
+            <div class="text-left">
+                <p class="font-bold text-lg mb-2 text-red-100">영산대학교 x SK플래닛</p>
+                <p class="text-sm mb-6">관광 MICE AI 빅데이터 과정</p>
+                <p class="text-sm text-red-300/40">© 2024 Youngsan University & SK Planet. All rights reserved.</p>
+            </div>
+            <!-- 오른쪽 정렬 그룹 -->
+            <div class="text-left md:text-right">
+                <p class="text-sm mb-2 text-red-200/80">홈페이지담당자 : 한인호</p>
+                <p class="text-sm font-bold text-red-100">
+                </p>
+            </div>
         </div>
     </footer>
 
+    <!-- 우측 하단 둥둥 떠다니는 플로팅 버튼 -->
+    <!-- 클릭 시 부드럽게 과정지원하기 폼으로 스크롤 이동합니다 -->
+    <button onclick="document.getElementById('inquiry').scrollIntoView({ behavior: 'smooth' });"
+        class="fixed bottom-8 right-6 md:right-10 z-50 flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-6 rounded-full shadow-2xl transition-transform hover:scale-105 active:scale-95">
+        <i data-lucide="pencil-line" class="w-5 h-5"></i>
+        <span class="hidden md:inline">과정지원하기</span>
+        <span class="inline md:hidden">지원하기</span>
+    </button>
+
     <!-- 자바스크립트 영역 -->
     <script>
-        // 1. 아이콘 렌더링
+        // 1. Lucide 아이콘 렌더링 시작
         lucide.createIcons();
 
-        // 2. 스크롤 애니메이션
+        // 2. 스크롤을 내릴 때마다 스르륵 나타나는 애니메이션 로직
         document.addEventListener("DOMContentLoaded", function() {
             const reveals = document.querySelectorAll(".reveal");
             const revealOnScroll = () => {
@@ -480,35 +543,34 @@
                 });
             };
             window.addEventListener("scroll", revealOnScroll);
-            revealOnScroll(); 
+            revealOnScroll(); // 첫 로딩시 바로 실행
         });
 
-        // 3. 문의폼 로직 (Optimistic UI & Keepalive)
+        // 3. 문의폼/과정지원 전송 로직 (새로고침 없이 깔끔하게 제출)
         const inquiryForm = document.getElementById('inquiryForm');
         const formContainer = document.getElementById('formContainer');
         const successMessage = document.getElementById('successMessage');
 
         if (inquiryForm) {
             inquiryForm.addEventListener('submit', function(e) {
-                e.preventDefault(); // 기본 폼 전송 막기
+                e.preventDefault(); // 기본 새로고침 방지
                 
-                // 폼 데이터 생성
                 const formData = new FormData(inquiryForm);
-
-                // 낙관적 UI: 사용자가 전송 버튼을 누르면 서버 응답 기다림 없이 즉시 성공 화면 표출
+                
+                // 제출 버튼 누르자마자 폼 숨기고 성공메시지 띄움
                 formContainer.classList.add('hidden');
                 successMessage.classList.remove('hidden');
 
-                // 실제 데이터 백그라운드 전송 (keepalive: true 속성으로 창을 닫아도 전송 보장)
+                // 백그라운드 데이터 전송
                 fetch('https://inputhaven.com/api/v1/submit', {
                     method: 'POST',
                     body: formData,
                     keepalive: true
-                }).catch(err => console.error('네트워크 에러 발생:', err)); // UI 에러 노출 방지
+                }).catch(err => console.error('네트워크 에러 발생:', err));
             });
         }
 
-        // 4. 모달창 제어 로직
+        // 4. 개인정보 동의 모달창 팝업 열기/닫기 로직
         const privacyModal = document.getElementById('privacyModal');
         const openPrivacyBtn = document.getElementById('openPrivacyBtn');
         const closePrivacyBtns = document.querySelectorAll('.close-privacy');
@@ -516,7 +578,7 @@
         if (openPrivacyBtn) {
             openPrivacyBtn.addEventListener('click', () => {
                 privacyModal.classList.remove('hidden');
-                privacyModal.classList.add('flex'); // Tailwind flex 클래스로 표시
+                privacyModal.classList.add('flex'); // 배경을 flex로 만들어 중앙정렬
             });
         }
 
